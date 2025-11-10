@@ -1,0 +1,58 @@
+# Øving 9 – Infrastructure as Code
+
+I denne øvingen lærte jeg hvordan man kan sjekke kvalitet og sikkerhet i Terraform-kode.  
+Jeg brukte **TFLint** og **Checkov**, og laget et eget PowerShell-script (`validate.ps1`) som kjører alle testene automatisk.
+
+---
+
+# Mappestruktur
+Slik ser prosjektet mitt ut:
+
+![Mappestruktur](bilder/mappestruktur.png)
+
+---
+
+# Verktøy jeg brukte
+- **Terraform**     – til å lage infrastrukturen
+- **TFLint**        – sjekker kodekvalitet
+- **Checkov**       – sjekker sikkerhet
+- **PowerShell**    – kjører scriptet automatisk
+- **VSCode**        – for å jobbe med prosjektet
+
+![VSCode-prosjekt](bilder/vscode-prosjekt.png)
+
+---
+
+# Alle kontroller bestått
+Her ser du at alle testene ble godkjent:
+
+![Alle kontroller bestått](bilder/validate-alle-kontroller.png)
+
+---
+
+# Test av feil
+Jeg lagde en feil med vilje (camelCase-variabel) for å se om scriptet oppdaget det:
+
+![Feil test](bilder/validate-feil.png)
+
+---
+
+# Checkov-sjekk
+Checkov kjørte en sikkerhetstest og fant ingen alvorlige feil:
+
+![Checkov-resultat](bilder/checkov-resultat.png)
+
+---
+
+# Refleksjon
+Jeg lærte mye av denne øvingen:
+- Det er lurt å teste lokalt før man pusher til GitHub.  
+- CI/CD-testing hjelper teamet med å unngå feil i hovedkoden.  
+- TFLint fant feil i navngiving og bruk av variabler, mens Checkov passet på sikkerheten.  
+- Jeg synes det var lærerikt å lage et PowerShell-script som kjører alt automatisk.
+
+---
+
+ Dato: 10. november 2025  
+ Student: Pamir Kargar  
+ Fag: Infrastructure as Code (IaC)
