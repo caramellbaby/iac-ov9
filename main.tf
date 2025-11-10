@@ -14,11 +14,11 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = var.myVariable
+  name     = var.myvariable
   location = "westeurope"
 }
 
-variable "myVariable" {
+variable "myvariable" {
   description = "Testvariabel for feil"
   type        = string
   default     = "rg_iacov9"
