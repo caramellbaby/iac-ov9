@@ -53,9 +53,15 @@ Jeg lærte mye av denne øvingen:
 
 ---
 
- Dato: 10. november 2025  
+# Resultat av GitHub Actions-test
+Jeg testet også workflowen i GitHub Actions.  
+Når jeg pushet en endring til branchen, startet Terraform Validation automatisk.  
+Den oppdaget en feil i koden, og testen feilet – noe som viser at oppsettet fungerer som det skal.  
+
+![GitHub Actions feilet test](bilder/actions-fail.png)
+
+---
+
+ Dato: 12. november 2025  
  Student: Pamir Kargar  
- Fag: Infrastructure as Code (IaC)
-
-
-_Test for re-run of GitHub Actions_
+ Fag: Infrastructure as Code
