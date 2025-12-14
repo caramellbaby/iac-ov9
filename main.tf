@@ -10,7 +10,7 @@ terraform {
 }
 
 variable "environment" {
-  type        = string
+  type = string
 }
 
 resource "azurerm_resource_group" "main" {
