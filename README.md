@@ -74,4 +74,4 @@ Den oppdaget en feil i koden, og testen feilet – noe som viser at oppsettet fu
 
  Dato: 12. november 2025  
  Student: Pamir Kargar  
- Fag: Infrastructure as Code
+ Fag: Infrastructure as CodeTrigger workflow
