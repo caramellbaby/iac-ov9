@@ -72,6 +72,11 @@ Den oppdaget en feil i koden, og testen feilet – noe som viser at oppsettet fu
 
 ---
 
+
+Dette er en ekte endring for å trigge workflowen.
+
+
+
  Dato: 12. november 2025  
  Student: Pamir Kargar  
  Fag: Infrastructure as CodeTrigger workflow
