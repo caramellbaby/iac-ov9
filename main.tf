@@ -11,7 +11,7 @@ terraform {
 
 variable "environment" {
   description = "Environment"
-  type = string
+  type        = string
 }
 
 resource "azurerm_resource_group" "main" {
