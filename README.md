@@ -37,6 +37,16 @@ Jeg lagde en feil med vilje (camelCase-variabel) for å se om scriptet oppdaget 
 
 ---
 
+## Endelig validering bestått
+Det var lærerikt å se hvordan en feil i koden ble fanget automatisk av workflowen.  
+Etter å ha rettet feilen og oppdatert provideren ble alle sjekker grønne, noe som viser at oppsettet nå er stabilt.
+
+Her ser man at workflowen til slutt bestod alle tester i GitHub Actions:
+
+![Workflow grønn](bilder/actions-success.png)
+
+---
+
 # Checkov-sjekk
 Checkov kjørte en sikkerhetstest og fant ingen alvorlige feil:
 
@@ -53,6 +63,15 @@ Jeg lærte mye av denne øvingen:
 
 ---
 
- Dato: 10. november 2025  
+# Resultat av GitHub Actions-test
+Jeg testet også workflowen i GitHub Actions.  
+Når jeg pushet en endring til branchen, startet Terraform Validation automatisk.  
+Den oppdaget en feil i koden, og testen feilet – noe som viser at oppsettet fungerer som det skal.  
+
+![GitHub Actions feilet test](bilder/actions-fail.png)
+
+---
+
+ Dato: 12. november 2025  
  Student: Pamir Kargar  
- Fag: Infrastructure as Code (IaC)
+ Fag: Infrastructure as Code

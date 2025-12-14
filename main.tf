@@ -1,25 +1,38 @@
 terraform {
-  required_version = ">= 1.6.0"
+  required_version = ">= 1.5.0"
 
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 4.0"
+      version = "~> 3.90.0"
     }
   }
 }
 
-provider "azurerm" {
-  features {}
+variable "environment" {
+  description = "Environment"
+  type        = string
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = var.myvariable
+resource "azurerm_resource_group" "main" {
+  name     = "rg-${var.environment}"
   location = "westeurope"
 }
 
-variable "myvariable" {
-  description = "Testvariabel for feil"
-  type        = string
-  default     = "rg_iacov9"
+resource "azurerm_storage_account" "example" {
+  name                     = "st${var.environment}example"
+  resource_group_name      = azurerm_resource_group.main.name
+  location                 = azurerm_resource_group.main.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+
+  lifecycle {
+    prevent_destroy = true
+  }
+
+  tags = {
+    environment = var.environment
+  }
 }
+
+
