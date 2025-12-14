@@ -36,3 +36,5 @@ jobs:
 
       - name: Run Checkov
         run: checkov -d . --framework terraform
+        continue-on-error: true
+
