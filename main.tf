@@ -19,7 +19,6 @@ resource "azurerm_resource_group" "main" {
   location = "westeurope"
 }
 
-
 resource "azurerm_storage_account" "example" {
   name                     = "st${var.environment}example"
   resource_group_name      = azurerm_resource_group.main.name
@@ -35,4 +34,5 @@ resource "azurerm_storage_account" "example" {
     environment = var.environment
   }
 }
+
 
