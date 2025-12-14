@@ -1,7 +1,3 @@
-# .checkov.yaml - minimal konfigurasjon for å komme i gang
-framework:
-  - terraform
-
+framework: terraform
 output: cli
-compact: true
-quiet: false
+

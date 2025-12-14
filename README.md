@@ -37,6 +37,16 @@ Jeg lagde en feil med vilje (camelCase-variabel) for å se om scriptet oppdaget 
 
 ---
 
+## Endelig validering bestått
+Det var lærerikt å se hvordan en feil i koden ble fanget automatisk av workflowen.  
+Etter å ha rettet feilen og oppdatert provideren ble alle sjekker grønne, noe som viser at oppsettet nå er stabilt.
+
+Her ser man at workflowen til slutt bestod alle tester i GitHub Actions:
+
+![Workflow grønn](bilder/actions-success.png)
+
+---
+
 # Checkov-sjekk
 Checkov kjørte en sikkerhetstest og fant ingen alvorlige feil:
 
